@@ -1,0 +1,17 @@
+﻿@model  AccountingAppEF2.DBA.User
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h2>Dashboard</h2>
+
+<div>
+    <h4>
+        Hello @Html.DisplayFor(x => x.username)
+    </h4>
+</div>
+<p>
+    @Html.ActionLink("Stocks", "Index", "Stocks")
+    @Html.ActionLink("Expenses", "Index", "Expenses")
+    @Html.ActionLink("Log Out", "Logout", "Users")
+</p>
